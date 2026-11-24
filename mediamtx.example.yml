@@ -1,0 +1,15 @@
+# CasaView cria e remove paths dinamicamente pela API local do MediaMTX.
+# O acesso à API fica preso ao localhost; não altere para 0.0.0.0.
+logLevel: warn
+rtspTransports: [tcp]
+hls: yes
+hlsAddress: 127.0.0.1:8888
+webrtc: yes
+webrtcAddress: 127.0.0.1:8889
+api: yes
+apiAddress: 127.0.0.1:9997
+# Tudo no loopback: o navegador acessa o vídeo só pelo backend (/media), que exige login.
+rtspAddress: 127.0.0.1:8554
+rtmp: no
+srt: no
+paths: {}

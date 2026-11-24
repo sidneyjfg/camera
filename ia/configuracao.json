@@ -1,0 +1,20 @@
+{
+  "modelo": "rfdetr-nano",
+  "confianca_minima": 0.6,
+  "intervalo_analise_por_camera_segundos": 2.0,
+  "intervalo_repeticao_alerta_segundos": 30,
+  "classes_observadas": [
+    "pessoa",
+    "cachorro",
+    "gato",
+    "pássaro",
+    "cavalo",
+    "ovelha",
+    "vaca",
+    "elefante",
+    "urso",
+    "zebra",
+    "girafa"
+  ],
+  "zonas_por_camera": {}
+}

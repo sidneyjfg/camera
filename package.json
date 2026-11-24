@@ -1,0 +1,35 @@
+{
+  "name": "casaview",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:server\" \"npm:vite\"",
+    "server": "node server/index.mjs",
+    "vite": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node --test server/auth.test.mjs",
+    "start:production": "concurrently -k \"npm:server\" \"vite preview --host 127.0.0.1 --strictPort\""
+  },
+  "dependencies": {
+    "@primno/dpapi": "^2.0.1",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "hls.js": "^1.6.13",
+    "lucide-react": "^0.468.0",
+    "node-onvif": "^0.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^10.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.7"
+  }
+}

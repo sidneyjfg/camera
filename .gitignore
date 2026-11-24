@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+mediamtx.local.yml
+mediamtx.yml
+*.local.yml
+*.local.yaml
+*.log
+ia/ambiente/
+ia/__pycache__/
+*.pyc
+
+# Binários e chaves locais
+mediamtx.exe
+*.zip
+*.key
+*.crt
